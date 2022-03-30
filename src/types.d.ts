@@ -36,7 +36,7 @@ export interface APITokenObject {
   atl_date: string;
   roi: null;
   last_updated: string;
-  }
+}
 export interface APIResponse {
   tokens: APITokenObject[];
 }

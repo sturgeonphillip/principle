@@ -9,4 +9,5 @@ coverage/
 
 package-lock.json
 
-.local/
+local/
+local

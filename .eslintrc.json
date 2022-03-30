@@ -31,5 +31,19 @@
 		"es6": true,
 		"browser": true,
 		"node": true
+	},
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true
+			}
+		},
+		"react": {
+			"version": "detect"
+		}
 	}
 }
+	

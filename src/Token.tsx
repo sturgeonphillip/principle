@@ -15,9 +15,9 @@ const Token = (props: TokenProps) => {
   return (
     <>
       <div key={id}>
-        <h1>{`${name} (${symbol})`}</h1>
+        <h1 className='text-xl font-semibold'>{`${name} (${symbol})`}</h1>
         {/* <p>{image}</p> */}
-        <img src={image} alt={name} />
+        <img src={image} alt={name} className={`h-9 w-9`} />
         <h2>{current_price}</h2>
         <h3>{`Last 24hr: high ${high_24h} low ${low_24h}`}</h3>
         <h3>{`Updated: ${last_updated}`}</h3>
