@@ -44,6 +44,7 @@
 		"react": {
 			"version": "detect"
 		}
-	}
+	},
+	"eslintIgnore": ["local/*"]
 }
 	

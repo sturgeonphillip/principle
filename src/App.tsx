@@ -8,7 +8,6 @@ const App = () => {
     <>
       <StrictMode>
         <div>
-          <h1>dogs</h1>
           <GeckoData />
         </div>
       </StrictMode>
