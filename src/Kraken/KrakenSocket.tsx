@@ -23,15 +23,14 @@ const socket = new WebSocket(wsURL);
 const SocketInput = () => {
   const [entry, setEntry] = useState<string>('');
 
-  const consoleActivity = () => {
-    // check socket variable is present
-    // is it open
-    // (browser support tests passed)
+  const watchTicker = () => {
+    // check socket variable is present. open? (browser support tests passed)
     if (wsGlobalCheck) {
       if (entry !== '') {
         socket.send(entry);
         // indicate in console w/ message
-        // 'sent message to server: ' + entry --> realistically, 'establishing connection for ${entry}
+        // 'sent message to server: ' + entry
+        // --> establishing connection for ${entry}
       } else {
         alert('enter a symbol to be sent.');
       }
@@ -51,7 +50,7 @@ const SocketInput = () => {
         onChange={(e) => setEntry(e.target.value)}
       />
       <button className={`bg-blue-500`} onClick={watchTicker}>
-        add coin
+        Watch Feed
       </button>
     </>
   );
@@ -76,3 +75,5 @@ export default SocketInput;
  */
 //
 //
+
+// components: open connection, close, send message (add ticker)

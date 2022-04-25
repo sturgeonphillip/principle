@@ -1,18 +1,18 @@
 const socketMessage = (message: string) => {
-  let d = new Date();
-  let h = d.getUTCHours();
-  let m = d.getUTCMinutes();
-  let s = d.getUTCSeconds();
-  let n = d.getUTCMilliseconds();
+  const d = new Date();
+  const h = d.getUTCHours();
+  const m = d.getUTCMinutes();
+  const s = d.getUTCSeconds();
+  const n = d.getUTCMilliseconds();
   const time = `${h}:${m}:${s}:${n}`;
   const action = message + ' ' + time;
   return <div>{action}</div>;
 };
 
-const closeSocket = () => {
-  if (wsGlobalCheck) {
-    socket.close();
-  } else {
-    alert('no sockets established');
-  }
-};
+// const closeSocket = () => {
+//   if (wsGlobalCheck) {
+//     socket.close();
+//   } else {
+//     alert('no sockets established');
+//   }
+// };
