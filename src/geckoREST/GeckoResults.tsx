@@ -1,8 +1,8 @@
 import Token from './Token'; // TODO response types
-import { APITokenObject } from './types';
+import { APITokenObject } from '../tokenAPI';
 import { FunctionComponent } from 'react';
 
-const Results: FunctionComponent<{ tokens: APITokenObject[] }> = ({
+const GeckoResults: FunctionComponent<{ tokens: APITokenObject[] }> = ({
   tokens,
 }) => {
   return (
@@ -27,4 +27,4 @@ const Results: FunctionComponent<{ tokens: APITokenObject[] }> = ({
   );
 };
 
-export default Results;
+export default GeckoResults;

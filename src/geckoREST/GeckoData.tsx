@@ -1,6 +1,6 @@
 import { FunctionComponent, useState, useEffect } from 'react';
-import { APITokenObject } from './types';
-import Results from './Results';
+import { APITokenObject } from '../tokenAPI';
+import GeckoResults from './GeckoResults';
 
 const GeckoData: FunctionComponent = () => {
   const [tokens, setTokens] = useState<APITokenObject[]>(
@@ -24,7 +24,7 @@ const GeckoData: FunctionComponent = () => {
 
   return (
     <>
-      <Results tokens={tokens} />
+      <GeckoResults tokens={tokens} />
     </>
   );
 };
