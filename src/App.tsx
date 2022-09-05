@@ -1,14 +1,15 @@
 import { render } from 'react-dom';
-import { StrictMode } from 'react';
+import { StrictMode, useRef, useState, useEffect } from 'react';
 
-import GeckoData from './geckoREST/GeckoData';
+// import GeckoData from './geckoREST/GeckoData';
 
 const App = () => {
   return (
     <>
       <StrictMode>
         <div>
-          <GeckoData />
+          {/* <GeckoData /> */}
+          <TestWS />
         </div>
       </StrictMode>
       {/* <div>{data}</div> */}
@@ -17,4 +18,3 @@ const App = () => {
 };
 
 render(<App />, document.getElementById('root'));
-export default App;

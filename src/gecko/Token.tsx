@@ -1,4 +1,4 @@
-import { TokenProps } from '.././tokenAPI';
+import { TokenProps } from '../tokenAPI';
 
 const Token = (props: TokenProps) => {
   const {
